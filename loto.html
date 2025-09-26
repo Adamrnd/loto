@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортлото 5 из 25</title>
+    <link rel="stylesheet" href="loto.css">
+</head>
+<body>
+    <h1>Спортлото 5 из 25</h1>
+    
+    <div class="game-container">
+        <div class="controls">
+            <label for="userNumbers">Введите 5 чисел от 1 до 25 через запятую:</label>
+            <input type="text" id="userNumbers" placeholder="Например: 3, 7, 12, 18, 25">
+            <button id="startBtn">Начать игру</button>
+        </div>
+        
+        <div class="balls-container" id="userBalls">
+            <!-- Здесь будут отображаться выбранные пользователем шары -->
+        </div>
+        
+        <button id="drawBtn" disabled>Провести розыгрыш</button>
+        
+        <div class="balls-container" id="drawnBalls">
+            <!-- Здесь будут отображаться выпавшие шары -->
+        </div>
+        
+        <div class="result" id="result">
+            <p>Вы угадали <span id="matchedCount">0</span> чисел из 5!</p>
+            <div class="prize" id="prize"></div>
+        </div>
+    </div>
+
+    <script> src="loto.js"  </script>
+</body>
+</html>
